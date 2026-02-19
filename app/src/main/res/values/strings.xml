@@ -1,3 +1,7 @@
 <resources>
 	<string name="app_name" translatable="false">AnKeyboard</string>
+	<string name="app_description">Keyboard cerdas dengan autocorrect, emoji, gesture typing, dan dark mode</string>
+	<string name="enable_keyboard">Aktifkan AnKeyboard</string>
+	<string name="select_keyboard">Pilih AnKeyboard</string>
+	<string name="test_hint">Tes fitur-fitur baru...</string>
 </resources>

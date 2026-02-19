@@ -1,7 +1,16 @@
 <resources>
-	<color name="colorPrimary">#344599</color>
-	<color name="colorPrimaryDark">#24306B</color>
-	<color name="colorAccent">#D4BA3B</color>
-	<color name="colorControlHighlight">#C9D2FF</color>
+	<color name="colorPrimary">#6200EE</color>
+	<color name="colorPrimaryDark">#3700B3</color>
+	<color name="colorAccent">#03DAC6</color>
+	<color name="colorControlHighlight">#BB86FC</color>
 	<color name="colorControlNormal">#888888</color>
+	<color name="keyboardBackground">#FAFAFA</color>
+	<color name="keyTextColor">#1F1F1F</color>
+	<color name="keyBackground">#FFFFFF</color>
+	<color name="keyPressed">#E8F5E8</color>
+	<!-- Dark mode colors -->
+	<color name="keyboardBackgroundDark">#1E1E1E</color>
+	<color name="keyTextColorDark">#FFFFFF</color>
+	<color name="keyBackgroundDark">#2D2D2D</color>
+	<color name="keyPressedDark">#333333</color>
 </resources>

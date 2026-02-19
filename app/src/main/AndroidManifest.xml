@@ -11,6 +11,15 @@
 		android:requestLegacyExternalStorage="true"
 		android:usesCleartextTraffic="true"
 		android:theme="@style/AppTheme">
+		
+		<!-- License Information -->
+		<meta-data
+			android:name="license"
+			android:value="${license}" />
+		<meta-data
+			android:name="license_url"
+			android:value="${licenseUrl}" />
+		
 		<activity
 			android:name=".MainActivity"
 			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
@@ -46,7 +55,8 @@
 		</provider>
 		<uses-library
 			android:name="org.apache.http.legacy"
-			android:required="false" />
+			android:required="false" />
+
        <service
             android:name=".AnKeyboardService"
             android:label="AnKeyboard"
@@ -60,4 +70,4 @@
                 android:resource="@xml/method" />
         </service>
 	</application>
-</manifest>
+</manifest>

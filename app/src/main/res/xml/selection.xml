@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="20%p"
+    android:horizontalGap="0px"
+    android:verticalGap="0px"
+    android:keyHeight="50dp">
+
+    <!-- Baris 1: Selection tools -->
+    <Row>
+        <Key android:codes="-201" android:keyIcon="@drawable/ic_left_arrow" android:keyWidth="15%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="-202" android:keyIcon="@drawable/ic_right_arrow" android:keyWidth="15%p"/>
+        <Key android:codes="-203" android:keyIcon="@drawable/ic_select" android:keyWidth="20%p"/>
+        <Key android:codes="-204" android:keyIcon="@drawable/ic_cut" android:keyWidth="20%p"/>
+        <Key android:codes="-205" android:keyIcon="@drawable/ic_copy" android:keyWidth="20%p"/>
+        <Key android:codes="-206" android:keyIcon="@drawable/ic_paste" android:keyWidth="20%p" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <!-- Baris 2: Spasi dan Enter -->
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="-200" android:keyLabel="DONE" android:keyWidth="50%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="-4" android:keyIcon="@drawable/ic_enter" android:keyWidth="50%p" android:keyEdgeFlags="right"/>
+    </Row>
+</Keyboard>

@@ -48,7 +48,7 @@
 
     <!-- Baris 4: ZXCV -->
     <Row>
-        <Key android:codes="-1" android:keyLabel="SHIFT" android:keyWidth="15%p" android:isModifier="true" android:isSticky="true" android:keyEdgeFlags="left"/>
+        <Key android:codes="-1" android:keyIcon="@drawable/ic_shift" android:keyWidth="15%p" android:isModifier="true" android:isSticky="true" android:keyEdgeFlags="left"/>
         <Key android:codes="122" android:keyLabel="z"/>
         <Key android:codes="120" android:keyLabel="x"/>
         <Key android:codes="99" android:keyLabel="c"/>
@@ -56,15 +56,16 @@
         <Key android:codes="98" android:keyLabel="b"/>
         <Key android:codes="110" android:keyLabel="n"/>
         <Key android:codes="109" android:keyLabel="m"/>
-        <Key android:codes="-5" android:keyLabel="DEL" android:keyWidth="15%p" android:isRepeatable="true" android:keyEdgeFlags="right"/>
+        <Key android:codes="-5" android:keyIcon="@drawable/ic_backspace" android:keyWidth="15%p" android:isRepeatable="true" android:keyEdgeFlags="right"/>
     </Row>
 
-    <!-- Baris 5: Spasi dan Enter -->
+    <!-- Baris 5: Emoji, Spasi, Titik, Enter -->
     <Row android:rowEdgeFlags="bottom">
-        <Key android:codes="44" android:keyLabel="," android:keyWidth="10%p" android:keyEdgeFlags="left"/>
-        <Key android:codes="32" android:keyLabel="SPACE" android:keyWidth="60%p" android:keyIcon="@null"/>
+        <Key android:codes="-200" android:keyIcon="@drawable/ic_select" android:keyWidth="15%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="-100" android:keyIcon="@drawable/ic_emoji" android:keyWidth="15%p"/>
+        <Key android:codes="32" android:keyLabel="SPACE" android:keyWidth="40%p"/>
         <Key android:codes="46" android:keyLabel="." android:keyWidth="10%p"/>
-        <Key android:codes="-4" android:keyLabel="GO" android:keyWidth="20%p" android:keyEdgeFlags="right" android:keyBackground="@drawable/key_bg_function"/>
+        <Key android:codes="-4" android:keyIcon="@drawable/ic_enter" android:keyWidth="20%p" android:keyEdgeFlags="right"/>
     </Row>
 </Keyboard>
 
