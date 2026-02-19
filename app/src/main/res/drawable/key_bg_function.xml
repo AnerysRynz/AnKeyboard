@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Saat tombol ditekan: Warna abu gelap -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#90A4AE"/>
+            <corners android:radius="6dp"/>
+        </shape>
+    </item>
+    
+    <!-- Saat normal: Warna abu-abu muda -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#CFD8DC"/> 
+            <corners android:radius="6dp"/>
+            <stroke android:width="1dp" android:color="#B0BEC5"/>
+        </shape>
+    </item>
+</selector>
+
