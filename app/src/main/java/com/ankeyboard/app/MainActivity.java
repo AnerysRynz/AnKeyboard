@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         // Initialize language manager
         languageManager = new LanguageManager(this);
         
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.acitivity_main);
         
         // Initialize views
         btnEnable = findViewById(R.id.btn_enable);
