@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.inputmethodservice.KeyboardView 
-    xmlns:android="[http://schemas.android.com/apk/res/android](http://schemas.android.com/apk/res/android)"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/keyboard_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
-    android:background="#F5F7FA" 
+    android:background="@color/keyboardBackground" 
     android:keyBackground="@drawable/key_bg_modern"
-    android:keyTextColor="#37474F"
+    android:keyTextColor="@color/keyTextColor"
     android:keyTextSize="18sp"
-    android:paddingTop="8dp"
-    android:paddingBottom="8dp"
+    android:labelTextSize="8sp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp"
     android:keyPreviewLayout="@layout/key_preview" 
-    android:shadowRadius="0.0" 
-/>
-<!-- Menggunakan background yang sangat soft agar mata nyaman -->
+    android:shadowRadius="0.0"
+    android:verticalGap="6dp" />
+

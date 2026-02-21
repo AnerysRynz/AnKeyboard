@@ -1,6 +1,4 @@
-plugins {
-	id 'com.android.application'
-}
+apply plugin: 'com.android.application'
 
 android {
 	compileSdk 34
@@ -14,6 +12,10 @@ android {
 		targetSdkVersion 34
 		versionCode 1
 		versionName "1.0"
+		
+		// License information
+		manifestPlaceholders['license'] = 'LGPL-3.0'
+		manifestPlaceholders['licenseUrl'] = 'https://www.gnu.org/licenses/lgpl-3.0.html'
 	}
 	
 	buildTypes {
@@ -29,6 +31,34 @@ android {
 
 dependencies {
 	implementation fileTree(dir: 'libs', include: ['*.jar'])
+	
+	// Core AndroidX
 	implementation 'androidx.appcompat:appcompat:1.7.1'
+	implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+	implementation 'androidx.preference:preference:1.2.1'
+	
+	// Material Design 3
 	implementation 'com.google.android.material:material:1.12.0'
+	
+	// Networking
+	implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+	implementation 'com.squareup.retrofit2:retrofit:2.10.0'
+	implementation 'com.squareup.retrofit2:converter-gson:2.10.0'
+	
+	// JSON parsing
+	implementation 'com.google.code.gson:gson:2.10.1'
+	
+	// Google Play Services
+	implementation 'com.google.android.gms:play-services-base:18.3.0'
+	
+	// Lifecycle & LiveData
+	implementation 'androidx.lifecycle:lifecycle-viewmodel:2.7.0'
+	implementation 'androidx.lifecycle:lifecycle-livedata:2.7.0'
+	
+	// Room Database
+	implementation 'androidx.room:room-runtime:2.6.1'
+	annotationProcessor 'androidx.room:room-compiler:2.6.1'
+
+	// Kotlin stdlib (some AndroidX / libraries rely on Kotlin runtime)
+	implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'
 }

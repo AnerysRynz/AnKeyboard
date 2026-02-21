@@ -1,8 +1,17 @@
 
 <manifest
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.ankeyboard.app">
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<!-- Keyboard Service Permission -->
 	<uses-permission android:name="android.permission.BIND_INPUT_METHOD" />
+	
+	<!-- Network Permission for Translation -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	
+	<!-- Clipboard Access -->
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	<application
 		android:allowBackup="true"
 		android:icon="@mipmap/ic_launcher"
@@ -11,6 +20,15 @@
 		android:requestLegacyExternalStorage="true"
 		android:usesCleartextTraffic="true"
 		android:theme="@style/AppTheme">
+		
+		<!-- License Information -->
+		<meta-data
+			android:name="license"
+			android:value="${license}" />
+		<meta-data
+			android:name="license_url"
+			android:value="${licenseUrl}" />
+		
 		<activity
 			android:name=".MainActivity"
 			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
@@ -33,6 +51,12 @@
 			android:name=".DebugActivity"
 			android:screenOrientation="portrait"
 			android:theme="@style/AppTheme.DebugActivity" />
+		<activity
+			android:name=".SettingsActivity"
+			android:screenOrientation="portrait"
+			android:label="Settings"
+			android:theme="@style/AppTheme"
+			android:exported="false" />
 		<provider
 			android:name="androidx.startup.InitializationProvider"
 			android:authorities="com.ankeyboard.app.androidx-startup"
@@ -46,7 +70,8 @@
 		</provider>
 		<uses-library
 			android:name="org.apache.http.legacy"
-			android:required="false" />
+			android:required="false" />
+
        <service
             android:name=".AnKeyboardService"
             android:label="AnKeyboard"
@@ -60,4 +85,4 @@
                 android:resource="@xml/method" />
         </service>
 	</application>
-</manifest>
+</manifest>
