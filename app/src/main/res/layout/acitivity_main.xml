@@ -189,6 +189,7 @@
 						app:singleSelection="true">
 
 						<com.google.android.material.button.MaterialButton
+							android:id="@+id/btn_lang_id"
 							android:layout_width="0dp"
 							android:layout_height="wrap_content"
 							android:layout_weight="1"
@@ -197,6 +198,7 @@
 							style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
 
 						<com.google.android.material.button.MaterialButton
+							android:id="@+id/btn_lang_en"
 							android:layout_width="0dp"
 							android:layout_height="wrap_content"
 							android:layout_weight="1"
@@ -205,6 +207,7 @@
 							style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
 
 						<com.google.android.material.button.MaterialButton
+							android:id="@+id/btn_lang_es"
 							android:layout_width="0dp"
 							android:layout_height="wrap_content"
 							android:layout_weight="1"
@@ -213,6 +216,7 @@
 							style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
 
 						<com.google.android.material.button.MaterialButton
+							android:id="@+id/btn_lang_fr"
 							android:layout_width="0dp"
 							android:layout_height="wrap_content"
 							android:layout_weight="1"
@@ -320,3 +324,4 @@
 			android:layout_height="32dp" />
 	</LinearLayout>
 </ScrollView>
+
