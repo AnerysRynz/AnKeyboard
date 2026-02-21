@@ -301,11 +301,7 @@
 					android:id="@+id/translate_language_layout"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					app:hint="@string/translate_language"
-					app:boxBackgroundColor="@color/colorPrimaryContainer"
-					app:boxCornerRadiusBottomEnd="8dp"
-					app:boxCornerRadiusBottomStart="8dp"
-					app:boxCornerRadiusTopEnd="8dp"
+				android:hint="@string/translate_language"
 					app:boxCornerRadiusTopStart="8dp">
 
 					<com.google.android.material.textfield.TextInputEditText

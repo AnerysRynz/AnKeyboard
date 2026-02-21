@@ -1,7 +1,6 @@
 
 <manifest
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	package="com.ankeyboard.app">
+	xmlns:android="http://schemas.android.com/apk/res/android">
 	
 	<!-- Keyboard Service Permission -->
 	<uses-permission android:name="android.permission.BIND_INPUT_METHOD" />
