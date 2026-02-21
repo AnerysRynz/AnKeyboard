@@ -42,12 +42,6 @@
 			</intent-filter>
 		</activity>
 		<activity
-			android:name=".AcitivityMainActivity"
-			android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-			android:hardwareAccelerated="true"
-			android:supportsPictureInPicture="true"
-			android:screenOrientation="portrait" />
-		<activity
 			android:name=".DebugActivity"
 			android:screenOrientation="portrait"
 			android:theme="@style/AppTheme.DebugActivity" />
@@ -86,3 +80,4 @@
         </service>
 	</application>
 </manifest>
+
